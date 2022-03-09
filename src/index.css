@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* reset */
+@import url('./css/reset.css');
+
+/* prodcuts */
+@import url('./css/products.css');
+
+/* prodcuts_card */
+@import url('./css/products_card.css');
+
+/* nav */
+@import url('./css/nav.css');
+
+/* product_info */
+@import url('./css/product_info.css');
