@@ -26,3 +26,6 @@ code {
 
 /* product_info */
 @import url('./css/product_info.css');
+
+/* cart */
+@import url('./css/cart.css');

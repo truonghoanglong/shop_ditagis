@@ -9,7 +9,7 @@ const Products = ({products}) => {
             products && products.length > 0 && 
             products.map((product,index) =>{
                 return (
-                    <ProductCard key={index} product={product} index={index+1}/>
+                    <ProductCard key={index} product={product}/>
                 )
             })
         }
