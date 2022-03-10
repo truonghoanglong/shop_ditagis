@@ -11,13 +11,16 @@ const Home = () => {
     },[data])
     
   return (
-    <div>
+    <>
+      
+      <div>
         <Nav/>
         <Products products={products}/>
         {loading && <h2>Loading...</h2>}
         {error && <h2>{error}</h2>}
         <h2 style={{textAlign: 'center'}}>code by: Trương Hoàng Long</h2>
     </div>
+    </>
   )
 }
 

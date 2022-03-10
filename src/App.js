@@ -7,7 +7,7 @@ import {
 } from "react-router-dom";
 import Cart from './page/Cart';
 import {CartContext} from './contexts/CartContext'
-import { ToastContainer, toast } from 'react-toastify';
+import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 

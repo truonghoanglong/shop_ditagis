@@ -2,6 +2,8 @@ import React from 'react'
 import {FaCartPlus} from 'react-icons/fa'
 import { useContext } from 'react'
 import { CartContext } from '../contexts/CartContext'
+import { toast } from 'react-toastify';
+
 const ProductInfo = ({product}) => {
   const {addCart} = useContext(CartContext)
   const handleBuy = () =>{
@@ -12,6 +14,7 @@ const ProductInfo = ({product}) => {
       id:product.id
     }
     addCart((item)=>[...item,newItems]);
+    toast.success("Thêm vào giỏ hàng")
   }
   return (
     <div className='product_info'>
