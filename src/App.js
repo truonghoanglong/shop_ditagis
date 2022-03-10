@@ -13,9 +13,10 @@ import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   const [cart,addCart] = useState([])
+  const [total,setTotal] = useState(0)
   return (
     <>
-      <CartContext.Provider value={{cart,addCart}}>
+      <CartContext.Provider value={{cart,addCart,total,setTotal}}>
       <Routes>
         <Route path="/" element={<Home/>} />
         <Route path="/products" element={<Home />} />

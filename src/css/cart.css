@@ -12,4 +12,16 @@
   text-overflow: ellipsis;
   margin-top: 0.3rem;
 }
-
+#delete{
+  padding: 15px;
+  outline:none;
+  border: none;
+  border-radius:10px;
+  cursor: pointer;
+  background-color:rgb(221, 159, 88);
+  margin-top:30px;
+  margin-left: 50px;
+}
+#tt{
+  display: inline-block;
+}

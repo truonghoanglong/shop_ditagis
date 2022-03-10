@@ -4,9 +4,12 @@ import { useContext } from 'react'
 import { CartContext } from '../contexts/CartContext'
 import { v4 as uuidv4 } from 'uuid';
 
-
 const Cart = () => {
-  const {cart} = useContext(CartContext)
+  const {cart,total,setTotal,addCart} = useContext(CartContext)
+  const handleDelete = () =>{
+    setTotal(0)
+    addCart([])
+  }
   return (
     <>
     <h2>Giỏ Hàng:</h2>
@@ -15,11 +18,13 @@ const Cart = () => {
           cart && cart.length > 0 &&
           cart.map(cartitem=>{
             return (
-              <CartCard key={uuidv4()} cartitem={cartitem} />
+              <CartCard key={uuidv4()} cartitem={cartitem}/>
             )
           })
         }
     </div>
+    <h3 id="tt">Tổng tiền: {total} $</h3>
+    <button id="delete" onClick={handleDelete}>Delete All</button>
     </>
     
   )

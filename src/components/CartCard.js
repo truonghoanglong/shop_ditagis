@@ -1,7 +1,7 @@
 import React from "react";
-import { GrClose } from "react-icons/gr";
+import { BsFillCartCheckFill } from "react-icons/bs";
 
-const CartCard = ({ cartitem }) => {
+const CartCard = ({ cartitem,total }) => {
   return (
     <>
       <div className="card">
@@ -13,11 +13,12 @@ const CartCard = ({ cartitem }) => {
           <div className="btn_div">
             <h4>${cartitem.giaBan}</h4>
             <button id="plus-cart" className="btn_delete">
-              <GrClose />
+              <BsFillCartCheckFill />
             </button>
           </div>
         </div>
       </div>
+  
     </>
   );
 };

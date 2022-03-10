@@ -5,7 +5,7 @@ import { CartContext } from '../contexts/CartContext'
 import { toast } from 'react-toastify';
 
 const ProductInfo = ({product}) => {
-  const {addCart} = useContext(CartContext)
+  const {addCart,setTotal} = useContext(CartContext)
   const handleBuy = () =>{
     const newItems = {
       hinhAnh:product.hinhAnh,
@@ -14,6 +14,7 @@ const ProductInfo = ({product}) => {
       id:product.id
     }
     addCart((item)=>[...item,newItems]);
+    setTotal((total)=>(total+= product.giaBan))
     toast.success("Thêm vào giỏ hàng")
   }
   return (
