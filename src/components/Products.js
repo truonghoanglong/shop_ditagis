@@ -1,6 +1,5 @@
 import React from 'react'
 import ProductCard from './ProductCard'
-import { v4 as uuidv4 } from 'uuid';
 const Products = ({products}) => {
     
   return (
