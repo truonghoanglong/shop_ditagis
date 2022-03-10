@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/shop_ditagis/static/css/main.00317752.css",
+    "main.js": "/shop_ditagis/static/js/main.91ad1f78.js",
+    "static/media/chuan.png": "/shop_ditagis/static/media/chuan.ef59ebcf001f7430b5ce.png",
+    "index.html": "/shop_ditagis/index.html",
+    "main.00317752.css.map": "/shop_ditagis/static/css/main.00317752.css.map",
+    "main.91ad1f78.js.map": "/shop_ditagis/static/js/main.91ad1f78.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.00317752.css",
+    "static/js/main.91ad1f78.js"
+  ]
+}
