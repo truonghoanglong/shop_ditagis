@@ -5,7 +5,6 @@ import useQuery from '../hooks/useQuery'
 const Home = () => {
     const {data,loading,error} = useQuery(`/products`)
     const [products,setProducts] = useState([])
-
     useEffect(()=>{
       if(data) setProducts(data)
     },[data])
