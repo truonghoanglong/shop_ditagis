@@ -5,10 +5,11 @@ import { CartContext } from '../contexts/CartContext'
 import { v4 as uuidv4 } from 'uuid';
 
 const Cart = () => {
-  const {cart,total,setTotal,addCart} = useContext(CartContext)
+  const {cart,total,setTotal,addCart,setQuantity} = useContext(CartContext)
   const handleDelete = () =>{
     setTotal(0)
     addCart([])
+    setQuantity(0)
   }
   return (
     <>
